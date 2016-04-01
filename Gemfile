@@ -14,6 +14,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 
 gem 'bootstrap-sass', '~> 3.3.6'
+gem 'mail_form', '~> 1.5', '>= 1.5.1'
 
 
 group :production do

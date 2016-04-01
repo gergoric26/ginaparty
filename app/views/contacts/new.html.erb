@@ -1,0 +1,38 @@
+<div class="container" class="well form-horizontal" id="contact_form">
+
+    <%= form_for @contact do |f| %>
+
+    <fieldset>
+      <legend>Contact Us Today!</legend>
+
+      <%= f.label :first_name %><br>
+      <%= f.text_field :first_name, required: true %>
+
+      <br>
+
+      <%= f.label :last_name %><br>
+      <%= f.text_field :last_name, required: true %>
+
+      <br>
+
+      <%= f.label :email %><br>
+      <%= f.email_field :email, required: true %>
+
+      <br>
+
+      <%= f.label :message %><br>
+      <%= f.text_area :message, as: :text %>
+
+      <div class="hidden">
+        <%= f.label :nickname %><br>
+        <%= f.text_field :nickname, hint: 'leave this field blank' %>
+      </div>
+      
+      <br>
+
+      <%= f.submit 'Send Message', class: "button" %>
+
+    </fieldset>
+    <% end %>
+
+</div>

@@ -72,6 +72,9 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.6.4)
       mime-types (>= 1.16, < 4)
+    mail_form (1.5.1)
+      actionmailer (>= 3.2, < 5)
+      activemodel (>= 3.2, < 5)
     mime-types (1.25.1)
     mini_portile2 (2.0.0)
     minitest (5.8.4)
@@ -157,6 +160,7 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   jbuilder (~> 2.0)
   jquery-rails
+  mail_form (~> 1.5, >= 1.5.1)
   pg
   rails (= 4.2.4)
   rails_12factor
